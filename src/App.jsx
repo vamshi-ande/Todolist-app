@@ -16,7 +16,7 @@ export function TodoList() {
       
       return [...prev, todoinput];
     })
-    setTodoInput("");
+    setTodoInput(""); // to set the value to the input 
   }
   function removeItem(id){
     setTodoList((prev) => prev.filter((_, index) => index !== id));
